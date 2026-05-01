@@ -7,16 +7,16 @@
   "max_tokens": 128,
   "coverage": {
     "train": {
-      "token_coverage": 0.9957865575957996,
+      "token_coverage": 0.9957575303021904,
       "texts_with_any_embedding": 1.0,
-      "total_tokens": 275784.0,
-      "found_tokens": 274622.0
+      "total_tokens": 306661.0,
+      "found_tokens": 305360.0
     },
     "validation": {
-      "token_coverage": 0.9954982673187162,
+      "token_coverage": 0.995918583695537,
       "texts_with_any_embedding": 1.0,
-      "total_tokens": 30877.0,
-      "found_tokens": 30738.0
+      "total_tokens": 37732.0,
+      "found_tokens": 37578.0
     },
     "test": {
       "token_coverage": 0.9957189098882739,

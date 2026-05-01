@@ -1,12 +1,12 @@
               precision    recall  f1-score   support
 
-     sadness       0.92      0.94      0.93       467
-         joy       0.94      0.87      0.91       536
-        love       0.70      0.87      0.78       130
-       anger       0.87      0.90      0.89       216
-        fear       0.81      0.84      0.82       194
-    surprise       0.81      0.60      0.69        57
+     sadness       0.92      0.90      0.91       550
+         joy       0.92      0.90      0.91       704
+        love       0.77      0.91      0.84       178
+       anger       0.90      0.89      0.90       275
+        fear       0.86      0.81      0.83       212
+    surprise       0.71      0.78      0.74        81
 
-    accuracy                           0.88      1600
-   macro avg       0.84      0.83      0.83      1600
-weighted avg       0.88      0.88      0.88      1600
+    accuracy                           0.88      2000
+   macro avg       0.84      0.86      0.85      2000
+weighted avg       0.89      0.88      0.88      2000

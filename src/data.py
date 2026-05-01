@@ -37,7 +37,13 @@ def load_text_classification_dataset(
     HF_CACHE_DIR.mkdir(parents=True, exist_ok=True)
     raw = load_dataset(dataset_name, cache_dir=str(HF_CACHE_DIR))
     original_splits = {split: len(raw[split]) for split in raw.keys()}
-    raw = _build_train_val_test(raw, seed=seed, label_column=label_column, validation_fraction=validation_fraction)
+    raw = DatasetDict(
+        {
+            "train": raw["train"],
+            "validation": raw["validation"],
+            "test": raw["test"],
+        }
+    )
 
     raw["train"] = _limit_split(raw["train"], max_train_examples, seed)
     raw["validation"] = _limit_split(raw["validation"], max_val_examples, seed)
@@ -49,7 +55,6 @@ def load_text_classification_dataset(
         "text_column": text_column,
         "label_column": label_column,
         "label_names": label_names,
-        "split_protocol": "validation is a stratified holdout from the original train split; test is held out for final evaluation",
         "validation_fraction": validation_fraction,
         "original_splits": original_splits,
         "splits": {split: len(raw[split]) for split in ["train", "validation", "test"]},
@@ -65,42 +70,6 @@ def load_text_classification_dataset(
         label_names=label_names,
         metadata=metadata,
     )
-
-
-def _build_train_val_test(raw, seed: int, label_column: str, validation_fraction: float) -> DatasetDict:
-    if not 0.0 < validation_fraction < 1.0:
-        raise ValueError("validation_fraction must be between 0 and 1.")
-    if "train" in raw and "test" in raw:
-        train_val = raw["train"].train_test_split(
-            test_size=validation_fraction,
-            seed=seed,
-            stratify_by_column=label_column,
-        )
-        return DatasetDict(
-            {
-                "train": train_val["train"],
-                "validation": train_val["test"],
-                "test": raw["test"],
-            }
-        )
-    if "train" not in raw:
-        raise ValueError("Dataset must contain a train split or explicit train/validation/test splits.")
-
-    train_test = raw["train"].train_test_split(test_size=0.2, seed=seed, stratify_by_column=label_column)
-    train_val = train_test["train"].train_test_split(
-        test_size=validation_fraction,
-        seed=seed,
-        stratify_by_column=label_column,
-    )
-    return DatasetDict(
-        {
-            "train": train_val["train"],
-            "validation": train_val["test"],
-            "test": train_test["test"],
-        }
-    )
-
-
 def _limit_split(split, max_examples: int, seed: int):
     if max_examples <= 0 or len(split) <= max_examples:
         return split
