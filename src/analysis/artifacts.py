@@ -43,6 +43,7 @@ def save_summary(results: list[EvaluationResult], output_dir: Path) -> Path:
         rows.append(
             {
                 "model": result.model_name,
+                "evaluation_split": result.metrics.get("split", "test"),
                 "accuracy": result.metrics["accuracy"],
                 "macro_f1": result.metrics["macro_f1"],
                 "weighted_f1": result.metrics["weighted_f1"],

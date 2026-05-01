@@ -115,6 +115,7 @@ def run_distilbert_finetune(
             output_dir=output_dir / "validation",
             probabilities=softmax_numpy(val_logits),
             write_predictions=False,
+            split="validation",
         )
         val_macro_f1 = val_result.metrics["macro_f1"]
         history.append(

@@ -28,6 +28,7 @@ class ExperimentConfig:
     max_train_examples: int = 0
     max_val_examples: int = 0
     max_test_examples: int = 0
+    validation_fraction: float = 0.1
 
     tfidf_max_features: int = 50_000
     tfidf_ngram_max: int = 2
@@ -95,6 +96,7 @@ def main() -> None:
         max_train_examples=config.max_train_examples,
         max_val_examples=config.max_val_examples,
         max_test_examples=config.max_test_examples,
+        validation_fraction=config.validation_fraction,
     )
     save_json(bundle.metadata, config.output_dir / "dataset_metadata.json")
 

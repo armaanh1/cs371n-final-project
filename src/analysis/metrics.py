@@ -26,6 +26,7 @@ def save_evaluation(
     output_dir: Path,
     probabilities: np.ndarray | None = None,
     write_predictions: bool = True,
+    split: str = "test",
 ) -> EvaluationResult:
     output_dir.mkdir(parents=True, exist_ok=True)
     y_true = np.asarray(y_true, dtype=np.int64)
@@ -33,6 +34,7 @@ def save_evaluation(
 
     metrics = {
         "model": model_name,
+        "split": split,
         "num_examples": int(len(y_true)),
         "accuracy": float(accuracy_score(y_true, y_pred)),
         "macro_f1": float(f1_score(y_true, y_pred, average="macro", zero_division=0)),
@@ -75,7 +77,7 @@ def save_evaluation(
         columns=[f"pred_{label}" for label in label_names],
     ).to_csv(output_dir / "confusion_matrix.csv")
 
-    predictions = _prediction_frame(texts, y_true, y_pred, label_names, probabilities)
+    predictions = _prediction_frame(texts, y_true, y_pred, label_names, probabilities, split=split)
     if write_predictions:
         predictions.to_csv(output_dir / "predictions.csv", index=False)
     save_errors(predictions, output_dir)
@@ -97,9 +99,11 @@ def _prediction_frame(
     y_pred: np.ndarray,
     label_names: list[str],
     probabilities: np.ndarray | None,
+    split: str,
 ) -> pd.DataFrame:
     frame = pd.DataFrame(
         {
+            "split": split,
             "text": texts,
             "gold_id": y_true,
             "gold_label": [label_names[idx] for idx in y_true],
@@ -112,4 +116,3 @@ def _prediction_frame(
         for idx, label in enumerate(label_names):
             frame[f"prob_{label}"] = probabilities[:, idx]
     return frame
-

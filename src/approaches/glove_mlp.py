@@ -125,6 +125,7 @@ def run_glove_mlp(
             output_dir=output_dir / "validation",
             probabilities=val_probs,
             write_predictions=False,
+            split="validation",
         )
         val_macro_f1 = val_result.metrics["macro_f1"]
         history.append(
