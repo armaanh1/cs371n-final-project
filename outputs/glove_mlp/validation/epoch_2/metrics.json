@@ -1,0 +1,54 @@
+{
+  "model": "glove_mlp_validation",
+  "split": "validation",
+  "num_examples": 1600,
+  "accuracy": 0.39,
+  "macro_f1": 0.2994587559313076,
+  "weighted_f1": 0.3970217694704662,
+  "label_names": [
+    "sadness",
+    "joy",
+    "love",
+    "anger",
+    "fear",
+    "surprise"
+  ],
+  "per_class": {
+    "sadness": {
+      "precision": 0.558641975308642,
+      "recall": 0.3875802997858672,
+      "f1": 0.45764854614412137,
+      "support": 467
+    },
+    "joy": {
+      "precision": 0.5734265734265734,
+      "recall": 0.458955223880597,
+      "f1": 0.5098445595854922,
+      "support": 536
+    },
+    "love": {
+      "precision": 0.19230769230769232,
+      "recall": 0.5,
+      "f1": 0.2777777777777778,
+      "support": 130
+    },
+    "anger": {
+      "precision": 0.3305084745762712,
+      "recall": 0.18055555555555555,
+      "f1": 0.23353293413173654,
+      "support": 216
+    },
+    "fear": {
+      "precision": 0.23785166240409208,
+      "recall": 0.4793814432989691,
+      "f1": 0.31794871794871793,
+      "support": 194
+    },
+    "surprise": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 57
+    }
+  }
+}

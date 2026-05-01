@@ -32,6 +32,7 @@ class ExperimentConfig:
 
     tfidf_max_features: int = 50_000
     tfidf_ngram_max: int = 2
+    tfidf_min_df: int = 1
     tfidf_c: float = 2.0
 
     glove_name: str = "antokun/glove.6B.50d"
@@ -110,6 +111,7 @@ def main() -> None:
                     seed=config.seed,
                     max_features=config.tfidf_max_features,
                     ngram_max=config.tfidf_ngram_max,
+                    min_df=config.tfidf_min_df,
                     c=config.tfidf_c,
                 )
             )

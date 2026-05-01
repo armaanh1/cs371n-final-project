@@ -1,10 +1,15 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from pathlib import Path
 from typing import Any
 
 import numpy as np
 from datasets import DatasetDict, load_dataset
+
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+HF_CACHE_DIR = PROJECT_ROOT / ".hf_cache"
 
 
 @dataclass(frozen=True)
@@ -29,7 +34,8 @@ def load_text_classification_dataset(
     max_test_examples: int = 0,
     validation_fraction: float = 0.1,
 ) -> DatasetBundle:
-    raw = load_dataset(dataset_name)
+    HF_CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    raw = load_dataset(dataset_name, cache_dir=str(HF_CACHE_DIR))
     original_splits = {split: len(raw[split]) for split in raw.keys()}
     raw = _build_train_val_test(raw, seed=seed, label_column=label_column, validation_fraction=validation_fraction)
 

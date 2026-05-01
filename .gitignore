@@ -5,7 +5,10 @@ __pycache__/
 venv/
 env/
 outputs/distilbert/model
+outputs/analysis/.mplconfig
 data/
 models/
 .ipynb_checkpoints/
 latex/
+overleaf_upload
+.hf_cache/

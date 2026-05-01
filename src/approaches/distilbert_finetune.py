@@ -6,6 +6,7 @@ from pathlib import Path
 import numpy as np
 import torch
 from torch.utils.data import DataLoader, Dataset
+from sklearn.utils.class_weight import compute_class_weight
 from tqdm.auto import tqdm
 from transformers import AutoModelForSequenceClassification, AutoTokenizer, get_linear_schedule_with_warmup
 
@@ -78,10 +79,27 @@ def run_distilbert_finetune(
         batch_size=batch_size,
     )
 
+    class_weights = compute_class_weight(
+        class_weight="balanced",
+        classes=np.unique(bundle.train_labels),
+        y=bundle.train_labels,
+    )
+    criterion = torch.nn.CrossEntropyLoss(weight=torch.tensor(class_weights, dtype=torch.float32, device=device))
+
     optimizer = torch.optim.AdamW(model.parameters(), lr=lr, weight_decay=weight_decay)
     total_steps = max(1, epochs * len(train_loader))
     warmup_steps = int(total_steps * warmup_ratio)
     scheduler = get_linear_schedule_with_warmup(optimizer, warmup_steps, total_steps)
+    save_json(
+        {
+            "model_name_or_path": model_name_or_path,
+            "max_length": max_length,
+            "num_labels": len(bundle.label_names),
+            "class_weights": class_weights,
+            "early_stopping_metric": "validation_macro_f1",
+        },
+        output_dir / "model_config.json",
+    )
 
     best_macro_f1 = -1.0
     best_state = None
@@ -95,8 +113,9 @@ def run_distilbert_finetune(
         for batch in progress:
             batch = {key: value.to(device) for key, value in batch.items()}
             optimizer.zero_grad(set_to_none=True)
+            labels = batch.pop("labels")
             outputs = model(**batch)
-            loss = outputs.loss
+            loss = criterion(outputs.logits, labels)
             loss.backward()
             torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
             optimizer.step()

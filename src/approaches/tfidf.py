@@ -18,6 +18,7 @@ def run_tfidf(
     seed: int,
     max_features: int,
     ngram_max: int,
+    min_df: int,
     c: float,
 ) -> EvaluationResult:
     output_dir = output_root / "tfidf_logreg"
@@ -31,7 +32,7 @@ def run_tfidf(
                     lowercase=True,
                     strip_accents="unicode",
                     ngram_range=(1, ngram_max),
-                    min_df=2,
+                    min_df=min_df,
                     max_features=max_features,
                     sublinear_tf=True,
                 ),
@@ -40,8 +41,9 @@ def run_tfidf(
                 "classifier",
                 LogisticRegression(
                     C=c,
-                    max_iter=2_000,
-                    solver="lbfgs",
+                    max_iter=5_000,
+                    solver="saga",
+                    class_weight="balanced",
                     random_state=seed,
                 ),
             ),
@@ -49,6 +51,8 @@ def run_tfidf(
     )
 
     pipeline.fit(bundle.train_texts, bundle.train_labels)
+    val_predictions = pipeline.predict(bundle.val_texts)
+    val_probabilities = pipeline.predict_proba(bundle.val_texts)
     predictions = pipeline.predict(bundle.test_texts)
     probabilities = pipeline.predict_proba(bundle.test_texts)
 
@@ -58,6 +62,16 @@ def run_tfidf(
         classifier=pipeline.named_steps["classifier"],
         label_names=bundle.label_names,
         output_dir=output_dir,
+    )
+    save_evaluation(
+        model_name="tfidf_logreg_validation",
+        texts=bundle.val_texts,
+        y_true=bundle.val_labels,
+        y_pred=val_predictions,
+        label_names=bundle.label_names,
+        output_dir=output_dir / "validation",
+        probabilities=val_probabilities,
+        split="validation",
     )
 
     return save_evaluation(

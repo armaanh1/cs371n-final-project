@@ -1,0 +1,54 @@
+{
+  "model": "tfidf_logreg_validation",
+  "split": "validation",
+  "num_examples": 1600,
+  "accuracy": 0.880625,
+  "macro_f1": 0.8341272720044993,
+  "weighted_f1": 0.8809748049393284,
+  "label_names": [
+    "sadness",
+    "joy",
+    "love",
+    "anger",
+    "fear",
+    "surprise"
+  ],
+  "per_class": {
+    "sadness": {
+      "precision": 0.9163179916317992,
+      "recall": 0.9379014989293362,
+      "f1": 0.926984126984127,
+      "support": 467
+    },
+    "joy": {
+      "precision": 0.9416498993963782,
+      "recall": 0.8731343283582089,
+      "f1": 0.9060987415295256,
+      "support": 536
+    },
+    "love": {
+      "precision": 0.7018633540372671,
+      "recall": 0.8692307692307693,
+      "f1": 0.7766323024054983,
+      "support": 130
+    },
+    "anger": {
+      "precision": 0.8738738738738738,
+      "recall": 0.8981481481481481,
+      "f1": 0.8858447488584474,
+      "support": 216
+    },
+    "fear": {
+      "precision": 0.81,
+      "recall": 0.8350515463917526,
+      "f1": 0.8223350253807107,
+      "support": 194
+    },
+    "surprise": {
+      "precision": 0.8095238095238095,
+      "recall": 0.5964912280701754,
+      "f1": 0.6868686868686869,
+      "support": 57
+    }
+  }
+}

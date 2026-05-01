@@ -9,12 +9,17 @@ import numpy as np
 import torch
 from torch import nn
 from torch.utils.data import DataLoader, TensorDataset
+from sklearn.utils.class_weight import compute_class_weight
 from tqdm.auto import tqdm
 
 from data import DatasetBundle
 from analysis.metrics import EvaluationResult, save_evaluation
 from tokenization import simple_tokenize
 from utils import choose_device, save_json, set_global_seed, softmax_numpy
+
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+HF_CACHE_DIR = PROJECT_ROOT / ".hf_cache"
 
 
 class EmbeddingLookup(Protocol):
@@ -72,23 +77,41 @@ def run_glove_mlp(
     device = choose_device(device_name)
 
     embeddings = load_embeddings(embedding_name=embedding_name, glove_path=glove_path, max_vectors=max_vectors)
-    x_train, train_coverage = average_embeddings(bundle.train_texts, embeddings, max_tokens=max_tokens)
-    x_val, val_coverage = average_embeddings(bundle.val_texts, embeddings, max_tokens=max_tokens)
-    x_test, test_coverage = average_embeddings(bundle.test_texts, embeddings, max_tokens=max_tokens)
+    fallback_embedding = global_mean_embedding(embeddings)
+    x_train, train_coverage = pooled_embeddings(bundle.train_texts, embeddings, max_tokens=max_tokens, fallback_embedding=fallback_embedding)
+    x_val, val_coverage = pooled_embeddings(bundle.val_texts, embeddings, max_tokens=max_tokens, fallback_embedding=fallback_embedding)
+    x_test, test_coverage = pooled_embeddings(bundle.test_texts, embeddings, max_tokens=max_tokens, fallback_embedding=fallback_embedding)
     save_json(
         {
             "embedding_name": embedding_name,
             "glove_path": str(glove_path) if glove_path else None,
             "vector_size": embeddings.vector_size,
+            "pooling": "mean_max_concat_l2_normalized",
+            "pooled_feature_size": x_train.shape[1],
             "max_tokens": max_tokens,
             "coverage": {"train": train_coverage, "validation": val_coverage, "test": test_coverage},
         },
         output_dir / "embedding_metadata.json",
     )
 
-    model = EmbeddingMLP(embeddings.vector_size, hidden_dim, len(bundle.label_names)).to(device)
+    model = EmbeddingMLP(x_train.shape[1], hidden_dim, len(bundle.label_names)).to(device)
     optimizer = torch.optim.AdamW(model.parameters(), lr=lr)
-    criterion = nn.CrossEntropyLoss()
+    class_weights = compute_class_weight(
+        class_weight="balanced",
+        classes=np.unique(bundle.train_labels),
+        y=bundle.train_labels,
+    )
+    criterion = nn.CrossEntropyLoss(weight=torch.tensor(class_weights, dtype=torch.float32, device=device))
+    save_json(
+        {
+            "input_dim": x_train.shape[1],
+            "hidden_dim": hidden_dim,
+            "num_labels": len(bundle.label_names),
+            "class_weights": class_weights,
+            "early_stopping_metric": "validation_macro_f1",
+        },
+        output_dir / "model_config.json",
+    )
 
     train_loader = _feature_loader(x_train, bundle.train_labels, batch_size=batch_size, shuffle=True)
     val_loader = _feature_loader(x_val, bundle.val_labels, batch_size=batch_size, shuffle=False)
@@ -122,7 +145,7 @@ def run_glove_mlp(
             y_true=val_labels,
             y_pred=val_probs.argmax(axis=1),
             label_names=bundle.label_names,
-            output_dir=output_dir / "validation",
+            output_dir=output_dir / "validation" / f"epoch_{epoch}",
             probabilities=val_probs,
             write_predictions=False,
             split="validation",
@@ -183,7 +206,8 @@ def load_huggingface_glove(embedding_name: str, max_vectors: int = 0) -> PlainTe
             "Install src/requirements.txt or set glove_path in ExperimentConfig."
         ) from exc
 
-    rows = load_dataset(dataset_name, split="train")
+    HF_CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    rows = load_dataset(dataset_name, split="train", cache_dir=str(HF_CACHE_DIR))
     vectors: dict[str, np.ndarray] = {}
     vector_size = None
 
@@ -263,8 +287,22 @@ def _parse_embedding_line(line: str, expected_size: int | None) -> tuple[str, np
     return word, vector
 
 
-def average_embeddings(texts: list[str], embeddings: EmbeddingLookup, max_tokens: int) -> tuple[np.ndarray, dict[str, float]]:
-    features = np.zeros((len(texts), embeddings.vector_size), dtype=np.float32)
+def global_mean_embedding(embeddings: EmbeddingLookup) -> np.ndarray:
+    if not isinstance(embeddings, PlainTextEmbeddings):
+        raise TypeError("Global mean fallback requires loaded plain-text embeddings.")
+    vectors = np.stack(list(embeddings.vectors.values())).astype(np.float32)
+    return vectors.mean(axis=0)
+
+
+def pooled_embeddings(
+    texts: list[str],
+    embeddings: EmbeddingLookup,
+    max_tokens: int,
+    fallback_embedding: np.ndarray,
+) -> tuple[np.ndarray, dict[str, float]]:
+    fallback_embedding = np.asarray(fallback_embedding, dtype=np.float32)
+    fallback_feature = _normalize_feature(np.concatenate([fallback_embedding, fallback_embedding]))
+    features = np.tile(fallback_feature, (len(texts), 1)).astype(np.float32)
     total_tokens = 0
     found_tokens = 0
     texts_with_embedding = 0
@@ -278,7 +316,9 @@ def average_embeddings(texts: list[str], embeddings: EmbeddingLookup, max_tokens
                 vectors.append(np.asarray(embeddings[token], dtype=np.float32))
                 found_tokens += 1
         if vectors:
-            features[row_idx] = np.mean(vectors, axis=0)
+            token_vectors = np.stack(vectors)
+            feature = np.concatenate([token_vectors.mean(axis=0), token_vectors.max(axis=0)])
+            features[row_idx] = _normalize_feature(feature)
             texts_with_embedding += 1
 
     coverage = {
@@ -288,6 +328,13 @@ def average_embeddings(texts: list[str], embeddings: EmbeddingLookup, max_tokens
         "found_tokens": float(found_tokens),
     }
     return features, coverage
+
+
+def _normalize_feature(feature: np.ndarray) -> np.ndarray:
+    norm = np.linalg.norm(feature)
+    if norm > 0:
+        feature = feature / norm
+    return feature.astype(np.float32)
 
 
 def _feature_loader(features: np.ndarray, labels: np.ndarray, batch_size: int, shuffle: bool) -> DataLoader:

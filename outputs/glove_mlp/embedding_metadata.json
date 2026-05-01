@@ -2,6 +2,8 @@
   "embedding_name": "antokun/glove.6B.50d",
   "glove_path": null,
   "vector_size": 50,
+  "pooling": "mean_max_concat_l2_normalized",
+  "pooled_feature_size": 100,
   "max_tokens": 128,
   "coverage": {
     "train": {

@@ -4,5 +4,14 @@
   "max_length": 80,
   "embedding_dim": 128,
   "hidden_dim": 128,
-  "num_layers": 1
+  "num_layers": 1,
+  "class_weights": [
+    0.5715646582519648,
+    0.49730625777041026,
+    2.0442930153321974,
+    1.2352032938754502,
+    1.3769363166953528,
+    4.660194174757281
+  ],
+  "early_stopping_metric": "validation_macro_f1"
 }

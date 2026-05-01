@@ -1,6 +1,6 @@
 model,evaluation_split,accuracy,macro_f1,weighted_f1,num_test_examples,output_dir
-distilbert,test,0.9235,0.8742550429742031,0.9230911059778613,2000,/Users/armaanhirani/Desktop/UT Austin/sp26 - Spring 2026/cs 371n - natural language processing/Final Project/outputs/distilbert
-lstm,test,0.898,0.8555755409606669,0.8975478726013849,2000,/Users/armaanhirani/Desktop/UT Austin/sp26 - Spring 2026/cs 371n - natural language processing/Final Project/outputs/lstm
-tfidf_logreg,test,0.848,0.7676080259072359,0.8411916529130592,2000,/Users/armaanhirani/Desktop/UT Austin/sp26 - Spring 2026/cs 371n - natural language processing/Final Project/outputs/tfidf_logreg
+distilbert,test,0.9205,0.8837433089220146,0.9221556791468287,2000,/Users/armaanhirani/Desktop/UT Austin/sp26 - Spring 2026/cs 371n - natural language processing/Final Project/outputs/distilbert
+lstm,test,0.882,0.8431379993281097,0.8853601576084409,2000,/Users/armaanhirani/Desktop/UT Austin/sp26 - Spring 2026/cs 371n - natural language processing/Final Project/outputs/lstm
+tfidf_logreg,test,0.8715,0.8235962606960124,0.8719528888789706,2000,/Users/armaanhirani/Desktop/UT Austin/sp26 - Spring 2026/cs 371n - natural language processing/Final Project/outputs/tfidf_logreg
 zero_shot,test,0.4795,0.37252146271385755,0.49271612713292884,2000,/Users/armaanhirani/Desktop/UT Austin/sp26 - Spring 2026/cs 371n - natural language processing/Final Project/outputs/zero_shot
-glove_mlp,test,0.5235,0.34548205087656864,0.4827040830621912,2000,/Users/armaanhirani/Desktop/UT Austin/sp26 - Spring 2026/cs 371n - natural language processing/Final Project/outputs/glove_mlp
+glove_mlp,test,0.427,0.3673250683574467,0.44741937000039783,2000,/Users/armaanhirani/Desktop/UT Austin/sp26 - Spring 2026/cs 371n - natural language processing/Final Project/outputs/glove_mlp

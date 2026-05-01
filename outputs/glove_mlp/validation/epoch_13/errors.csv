@@ -1,0 +1,201 @@
+split,text,gold_id,gold_label,pred_id,pred_label,confidence,prob_sadness,prob_joy,prob_love,prob_anger,prob_fear,prob_surprise
+validation,im feeling generous with my words,1,joy,2,love,0.85355246,0.017842408,0.09309159,0.85355246,0.02173091,0.0045800796,0.009202533
+validation,i feel as sweet as a centuries old cake,1,joy,2,love,0.7416395,0.017167572,0.204509,0.7416395,0.011443875,0.005045914,0.02019419
+validation,i do eat rawly goodness i feel radiant,1,joy,2,love,0.73685205,0.026605774,0.19462699,0.73685205,0.021279633,0.00714488,0.013490659
+validation,i think i deserve for once this freedom makes me feel amazing,5,surprise,1,joy,0.71116555,0.024418462,0.71116555,0.19518632,0.006812074,0.006362071,0.05605556
+validation,i will make you feel amazing tonight i need you no,5,surprise,1,joy,0.70717245,0.060158983,0.70717245,0.06984007,0.0069350307,0.020906199,0.13498724
+validation,i feel stressed always,0,sadness,1,joy,0.6980224,0.042191945,0.6980224,0.14221935,0.06989597,0.030530883,0.017139532
+validation,i feel completely blessed to have such wonderful family and friends,1,joy,2,love,0.6896584,0.014055368,0.23201458,0.6896584,0.013539366,0.0097986525,0.040933643
+validation,i feel brave and rare and golden,1,joy,2,love,0.6887393,0.0062366296,0.26618975,0.6887393,0.006673784,0.0042820848,0.027878424
+validation,i feel that rushed prize giving really dilute the event and in future prize givings will be not rushed and will be on timetable,3,anger,1,joy,0.68737465,0.040421832,0.68737465,0.14852415,0.015959138,0.031127594,0.07659261
+validation,i didnt really feel an appetite for noodles i chose a bowl of rice with sweet potatoe tempura amp miso soup was included,1,joy,2,love,0.67131394,0.033473432,0.2231064,0.67131394,0.036683846,0.012548667,0.02287371
+validation,i feel strong style color black line height,1,joy,2,love,0.6574024,0.021507878,0.22547753,0.6574024,0.037209094,0.0154326735,0.042970367
+validation,i admit to feeling sympathy with the dignified and the defiant,1,joy,2,love,0.64064354,0.03645772,0.21807267,0.64064354,0.05771307,0.020488214,0.02662476
+validation,one night,1,joy,5,surprise,0.6357875,0.07177023,0.16081499,0.012202321,0.03141543,0.088009596,0.6357875
+validation,i pray the rosary i feel a sense of calm upon me,1,joy,2,love,0.62998104,0.03868043,0.20759243,0.62998104,0.05821128,0.024932409,0.040602386
+validation,i feel utterly joyful and brimming with gratitude,1,joy,2,love,0.62596786,0.03702975,0.27713552,0.62596786,0.0131378025,0.0054312255,0.04129779
+validation,i can make a sugar laden roasted chocolate cake like the best of em and nobody can even tell its vegan phase which is perfectly understandable for a year old girl to feel i am thrilled that she is a vegan and wish her continued success and health,1,joy,2,love,0.6246695,0.029240556,0.25098562,0.6246695,0.036386836,0.01864707,0.04007045
+validation,i express that same feeling im homophobic boring or in denial,0,sadness,3,anger,0.6144359,0.11216918,0.021273345,0.03556577,0.6144359,0.15290084,0.063655004
+validation,i always find the way to feel and be impressed,5,surprise,1,joy,0.60846424,0.028176276,0.60846424,0.087780245,0.018250657,0.052082673,0.20524593
+validation,i feel like this i can look into that sweet face and remember that im supposed to love you,1,joy,2,love,0.6062017,0.033232972,0.21242854,0.6062017,0.047714833,0.029735757,0.07068615
+validation,i feel fucking terrific after,1,joy,0,sadness,0.6048442,0.6048442,0.088272214,0.010717393,0.15350358,0.06947443,0.073188104
+validation,i could try to reach my tongue out to lick it but in vain so close i could feel the divine warmth from her pussy but in vain,1,joy,2,love,0.600465,0.08495732,0.11446097,0.600465,0.10771179,0.05262319,0.03978172
+validation,i have no feelings of discontent,0,sadness,3,anger,0.59593314,0.16926165,0.01035897,0.06424847,0.59593314,0.1347586,0.025439193
+validation,while cycling in the country,4,fear,1,joy,0.595917,0.058778614,0.595917,0.10756881,0.0693915,0.104864374,0.06347981
+validation,i feel so lame and annoying and generally unliked sometimes,0,sadness,3,anger,0.5812671,0.119644515,0.04368152,0.10195436,0.5812671,0.11293658,0.040515944
+validation,i hate these feelings of not being complacent,1,joy,3,anger,0.5809443,0.15162262,0.012556183,0.029877005,0.5809443,0.18369004,0.041309837
+validation,im feeling shy to approach them,4,fear,1,joy,0.5760135,0.07091482,0.5760135,0.07280144,0.0720367,0.14068289,0.067550644
+validation,i love the smell it makes me feel invigorated and fresh and happy,1,joy,2,love,0.5705191,0.064334705,0.20025176,0.5705191,0.0633911,0.02317491,0.07832844
+validation,i feel more satisfied with what i eat i feel full longer and i dont feel like snacking later,1,joy,2,love,0.5675683,0.04740587,0.25002682,0.5675683,0.0746043,0.02487113,0.035523627
+validation,i have a feeling i may be popular with the lady folk,1,joy,2,love,0.5669189,0.03507753,0.26515752,0.5669189,0.03290011,0.022069003,0.07787685
+validation,i had a real life pet hamster when i was little so i really like this little family sylvanian families are great for role play learning about animals creating your own stories and their flocked fur makes them feel very special,1,joy,2,love,0.56588155,0.050668336,0.18682805,0.56588155,0.06179944,0.051885165,0.08293749
+validation,i feel even more pressured to cook healthy meals and not eat out do thorough preschool lessons with my boys keep the house spotless exercise serve the church and community and be a happy loving wife at all times,4,fear,2,love,0.5576782,0.0655813,0.22957025,0.5576782,0.065896355,0.033168398,0.04810548
+validation,i didn t want to feel foolish ridiculous embarrassed and self conscious,0,sadness,3,anger,0.55302185,0.20545276,0.042885333,0.022837657,0.55302185,0.15803571,0.01776668
+validation,i am so feeling so rich and yup i know i am so blessed,1,joy,2,love,0.55299723,0.057217814,0.27564678,0.55299723,0.036252145,0.023373727,0.05451236
+validation,i still feel like a kid eager to blow the candle open gifts and all that good stuff,1,joy,2,love,0.5523337,0.030889573,0.29238954,0.5523337,0.0366251,0.023575027,0.06418716
+validation,i used to feel from your music is now gone and it has been replaced by a bitter taste in my mouth and a lot of sadness,3,anger,2,love,0.5511862,0.08204347,0.1468268,0.5511862,0.10876161,0.0417911,0.06939072
+validation,i like to listen to it when the weather gets warm though because it makes me feel like i m carefree and at the beach,1,joy,2,love,0.5503434,0.053182527,0.20825922,0.5503434,0.0771228,0.045480967,0.065611094
+validation,i feel style of charming creepy macabre drinks the fountain,1,joy,2,love,0.54893154,0.021040076,0.30960593,0.54893154,0.016235018,0.008893709,0.09529369
+validation,ive had little movie star tears come down but the way i feel is not relieved by that,1,joy,5,surprise,0.5456823,0.0938549,0.08768663,0.044788573,0.06641042,0.16157717,0.5456823
+validation,i just love the feeling of something warmly hugging you and feeling so precious and small precious to someone something,1,joy,2,love,0.5368163,0.047663286,0.21399075,0.5368163,0.028448185,0.03524571,0.13783585
+validation,first anatomy lesson,3,anger,5,surprise,0.533077,0.07847941,0.25994956,0.09780137,0.007217502,0.02347523,0.533077
+validation,i feel uncomfortable depending on my partner to meet my needs,4,fear,2,love,0.53179806,0.039767,0.34510505,0.53179806,0.028563498,0.023951128,0.03081532
+validation,i feel very amused at that pic,1,joy,5,surprise,0.52986,0.05069778,0.23553404,0.06826665,0.043001186,0.07264027,0.52986
+validation,i always feel very afraid as i work on books egan tells kurt,4,fear,5,surprise,0.5283126,0.0777799,0.05521509,0.053508084,0.12909348,0.1560908,0.5283126
+validation,ive been feeling terrific recently because i have the worlds best friends around me who make me feel be,1,joy,5,surprise,0.52749234,0.06947313,0.16717826,0.03321303,0.04079419,0.16184911,0.52749234
+validation,i wonder are you jealous or feeling of discontent or covetousnes,0,sadness,3,anger,0.52663183,0.13371989,0.011900181,0.062457923,0.52663183,0.23200375,0.03328647
+validation,i feel so immensely blessed that i was chosen to be little joeys mom,2,love,1,joy,0.5258191,0.037444662,0.5258191,0.33064237,0.019917287,0.0212344,0.06494214
+validation,i like to throw in a habanero if i m feeling brave and spring onions,1,joy,2,love,0.52480793,0.06828922,0.17905535,0.52480793,0.0978892,0.037953038,0.092005186
+validation,im still feeling needy and what my human family cannot possibly give me i am looking elsewhere,0,sadness,2,love,0.5234604,0.0919403,0.19198744,0.5234604,0.05117123,0.07283438,0.06860632
+validation,i hope you enjoy and do not feel offended,3,anger,2,love,0.52285415,0.0365455,0.34720936,0.52285415,0.034815494,0.020163292,0.038412195
+validation,i can run and it feels amazing,5,surprise,1,joy,0.52225184,0.03627543,0.52225184,0.20257388,0.011815889,0.018616179,0.20846675
+validation,i feel a bit melancholy when i think about not teaching the children i don t yet have about the love of jesus or not taking them to sunday school or not having them attend vacation bible school,0,sadness,2,love,0.52072763,0.045738835,0.24630623,0.52072763,0.051209208,0.035305735,0.10071241
+validation,i remember feeling dismayed from this observation,0,sadness,5,surprise,0.5197219,0.089984216,0.04238171,0.008189569,0.05862612,0.28109643,0.5197219
+validation,i feel peaceful like i shall grow wings and fly away,1,joy,2,love,0.51874876,0.027306577,0.34394205,0.51874876,0.069860525,0.025463928,0.014678192
+validation,im in the car with my roommate and her family i feel like im being all rude because i have to call her and my dad so that my dad can give her directions and she keeps asking what she needs to bring,3,anger,2,love,0.5179622,0.06609857,0.19577442,0.5179622,0.08966935,0.05269094,0.077804536
+validation,i couldnt be entirely satisfied because i longed for a companion i could feel entirely devoted to as i am now,2,love,1,joy,0.51245797,0.098888285,0.51245797,0.22079706,0.054037314,0.048219804,0.06559959
+validation,i feel so proud and blessed to be carrying this baby,1,joy,2,love,0.5124298,0.023649355,0.34734628,0.5124298,0.025657823,0.022810433,0.06810636
+validation,i feel the earth move tribute to carole king karaoke mix bewertung rel nofollow target blank,0,sadness,2,love,0.51114863,0.05490945,0.20049955,0.51114863,0.12174307,0.04916043,0.062538914
+validation,i was feeling this really weird sense of isolation that would have creeped me out pretty bad if i was alone,5,surprise,0,sadness,0.51061827,0.51061827,0.035238404,0.011027563,0.18658644,0.16960008,0.08692934
+validation,i feel lame all i use is color pencils to color pokemon,0,sadness,2,love,0.51055086,0.028773617,0.35919523,0.51055086,0.020153075,0.015417683,0.06590955
+validation,i feel is very delicate,2,love,1,joy,0.50986564,0.022138631,0.50986564,0.39445895,0.010500451,0.012610949,0.05042529
+validation,i love photographing this gorgeous family the love they feel for each other is so strong it radiates around them,1,joy,2,love,0.50965255,0.038622394,0.29623008,0.50965255,0.029023884,0.028895812,0.0975753
+validation,i wish that i had listened to this album back in the day because i feel like i have missed out on so many listening opportunities it is not very often you come across an album that you like the whole way through,0,sadness,1,joy,0.50862443,0.05027883,0.50862443,0.20969944,0.052986067,0.060510606,0.11790072
+validation,i feel like everywhere i look a piece of my sweet boy is missing,1,joy,2,love,0.507803,0.0595016,0.21152446,0.507803,0.03605389,0.037902735,0.1472143
+validation,i feel so much better about that number,1,joy,5,surprise,0.5073754,0.08110775,0.17233269,0.02228085,0.029059555,0.18784375,0.5073754
+validation,i enjoy feeling strong i love having muscles and strength and endurance,1,joy,2,love,0.5069929,0.020046536,0.4007626,0.5069929,0.025493244,0.01661577,0.03008903
+validation,i feel this is a useful tool in a couples quest to start a family,1,joy,2,love,0.50653523,0.030039467,0.35980222,0.50653523,0.02151744,0.020880237,0.06122538
+validation,i just hate to feel unhappy emotions,0,sadness,3,anger,0.5048231,0.14544173,0.010435885,0.021101529,0.5048231,0.23005024,0.08814752
+validation,i feel overwhelmed in a good way,4,fear,5,surprise,0.5045951,0.20895097,0.10915814,0.014302751,0.03109079,0.13190225,0.5045951
+validation,i feel so honored that they enjoy it enough to create with it,1,joy,2,love,0.50456583,0.01447995,0.4306562,0.50456583,0.009369501,0.008522172,0.032406267
+validation,i feel a strange sense of foreboding,4,fear,5,surprise,0.5044112,0.09794975,0.12581919,0.1477657,0.044953607,0.079100564,0.5044112
+validation,ill feel uncomfortable although i always heard people or friends around calling their loved one honey babe my angel darling peaches pickle gt,4,fear,2,love,0.5041984,0.0939936,0.09122205,0.5041984,0.12848328,0.08253676,0.099565916
+validation,im starting to feel overwhelmed again when it comes to the research for this book,4,fear,5,surprise,0.5024583,0.08354186,0.11072292,0.02118101,0.056567054,0.22552887,0.5024583
+validation,i had a hour training class yesterday which will help me feel a little less stressed with the techniques i learned,0,sadness,1,joy,0.4988478,0.050997,0.4988478,0.15264805,0.05943088,0.10619223,0.13188401
+validation,i started to answer no i just was feeling kinda horny sis,2,love,0,sadness,0.4984485,0.4984485,0.036145195,0.059172258,0.2181831,0.12065673,0.06739428
+validation,i feel like a less melancholy holden caulfield,0,sadness,2,love,0.4957295,0.035360925,0.21276669,0.4957295,0.067880824,0.03301288,0.15524909
+validation,i feel like she shouldnt have blamed him for it but she did and she never forgave him,0,sadness,3,anger,0.49504298,0.21778542,0.030321253,0.03534635,0.49504298,0.17099749,0.050506454
+validation,i just feel like warner brothers fucked with the final edit and that an even better film will be arriving in director s cut format on blu ray,3,anger,1,joy,0.4940856,0.037875146,0.4940856,0.20007004,0.029150974,0.045902543,0.19291568
+validation,i trust though it may take more courage than i feel i have that our god is a faithful god and even when i dont see the bigger picture my lord does,1,joy,2,love,0.4933658,0.042406593,0.34710172,0.4933658,0.027866703,0.020981206,0.068278
+validation,i cant help but wonder if the other mom i walked with felt the same way i was feeling as she watched her sweet girls with my isaac,1,joy,2,love,0.4931948,0.057506572,0.1686396,0.4931948,0.11189667,0.061345503,0.10741693
+validation,i marvel at the wonders of life this happened a while ago but i am feeling sentimental this week,0,sadness,5,surprise,0.4907243,0.10637637,0.19260256,0.08386775,0.04072985,0.085699104,0.4907243
+validation,i dance the more i feel joy the more generous i become with myself the more i live in the present the more i let myself off the trauma hook the less important the past becomes,1,joy,2,love,0.49070242,0.0874164,0.25933748,0.49070242,0.06409357,0.04193789,0.056512177
+validation,i feel for you my beloved master time will tell you this is true,1,joy,2,love,0.48992813,0.024201514,0.4038695,0.48992813,0.013484049,0.016668774,0.051848136
+validation,i feel special joy in your elevation to this post,1,joy,2,love,0.4881327,0.09709823,0.26874956,0.4881327,0.036058024,0.029096568,0.08086489
+validation,i feel bothered,3,anger,0,sadness,0.48788434,0.48788434,0.008676216,0.0027199066,0.19477566,0.2182201,0.087723754
+validation,i love autumn and everything that comes with it although i feel i am getting excited for christmas way too early this year me and my friends including a href http andthenwear,1,joy,2,love,0.48740926,0.049006436,0.30988058,0.48740926,0.039816085,0.027967198,0.085920475
+validation,i cant believe with that statement being said that im already feeling sexually deprived,0,sadness,3,anger,0.48591706,0.11263236,0.032216407,0.02146225,0.48591706,0.2525545,0.0952174
+validation,i stray i feel the pains of loneliness and discontent,0,sadness,3,anger,0.48524484,0.22968794,0.011562715,0.06926042,0.48524484,0.16049576,0.043748338
+validation,i was on a mission to feel festive and after dressing up in tinsel santa hat christmas headband a flashing brooch eating mince pies and pulling a christmas cracker i think i finally managed to achieve it,1,joy,2,love,0.48388484,0.059905954,0.27448753,0.48388484,0.09526968,0.030482527,0.055969547
+validation,i was gay that i began to feel disturbed and embarrassed,0,sadness,3,anger,0.48377275,0.10799397,0.019491725,0.032382626,0.48377275,0.24784175,0.108517155
+validation,i feel dirty rel bookmark i feel dirty i feel gross poaching vicarious threads from agtalk but i can t resist,0,sadness,3,anger,0.48025388,0.24241531,0.026958253,0.068356335,0.48025388,0.14353082,0.03848542
+validation,i am so hurt and feel so abused,0,sadness,3,anger,0.47964585,0.22139163,0.00855161,0.0046307733,0.47964585,0.25839254,0.027387612
+validation,i don t feel that talented at impacting how things end up at the moment,1,joy,5,surprise,0.4785883,0.05834551,0.27863777,0.034107804,0.039085887,0.11123475,0.4785883
+validation,i feel very energetic to cook something very special i decide to prepare at least one dish with posto and the other days when i simply dont remain in the mood of cooking at all i again look for posto,1,joy,2,love,0.4766027,0.036886524,0.4089536,0.4766027,0.023500498,0.016133308,0.03792325
+validation,i want to reach out a hand and have another there to take hold and there is noone and its making me feel needy,0,sadness,2,love,0.47588167,0.13026358,0.19743074,0.47588167,0.05863026,0.06286892,0.07492481
+validation,i would constantly feel agitated,4,fear,3,anger,0.47404236,0.078218974,0.013275291,0.008621997,0.47404236,0.38690352,0.03893787
+validation,i would hate to feel unwelcome,0,sadness,3,anger,0.47336242,0.16249004,0.05829448,0.083932206,0.47336242,0.18250136,0.039419528
+validation,i am convinced that being encouraged to be obedient to the commandments of god when done with compassion and love by caring church family members do not leave us feeling abused trapped and hopeless but strengthened hopeful and cherished by both god and his church,0,sadness,2,love,0.47315758,0.0818487,0.1566315,0.47315758,0.16382264,0.07974333,0.04479623
+validation,i woke up feeling ok but i had a weird feeling about the run today,1,joy,5,surprise,0.47275653,0.13838515,0.03272586,0.00982283,0.088568315,0.25774133,0.47275653
+validation,im really feeling hot comfort foods this week,2,love,1,joy,0.47243646,0.030244093,0.47243646,0.2927339,0.025087344,0.037107166,0.14239097
+validation,i feel so appreciative to have my life to live,1,joy,2,love,0.4720476,0.052032124,0.29777932,0.4720476,0.032064676,0.038833853,0.10724247
+validation,i feel like it is conor at his most sincere,1,joy,2,love,0.47075942,0.040768534,0.3264569,0.47075942,0.037064537,0.019512452,0.10543825
+validation,i did not picture myself feeling shy in this class when i signed up for it,4,fear,1,joy,0.46871325,0.143134,0.46871325,0.087000236,0.072225794,0.11442549,0.1145012
+validation,ive ever invented hail ember and flake are probably the three that are the most me so this story feels especially vulnerable,4,fear,5,surprise,0.46860752,0.12150901,0.07365252,0.042752836,0.07826754,0.21521059,0.46860752
+validation,i was feeling playful,1,joy,2,love,0.466643,0.046015292,0.316299,0.466643,0.045190755,0.016499607,0.1093523
+validation,im feeling generous im going to share them on my blog too,1,joy,2,love,0.46555576,0.08634506,0.2944828,0.46555576,0.07687106,0.0467698,0.029975533
+validation,i feel a whisper a friendly voice start to rise indulge until your hearts content and pay no mind,1,joy,2,love,0.46397957,0.086395964,0.23694892,0.46397957,0.12934747,0.047899146,0.03542887
+validation,i feel like a whiney lil girl who s keeps whining and psycho ing herself to love studying and start studying,0,sadness,2,love,0.4638589,0.070163,0.15781826,0.4638589,0.135526,0.07536786,0.09726601
+validation,i would like to take this opportunity to say how amazing his family are all of them made me feel welcomed and if i have children who are half as lovely as the children who were sat on my table i would very happy,1,joy,2,love,0.46373612,0.043777596,0.34516826,0.46373612,0.04304905,0.033622645,0.07064636
+validation,i was still feeling weird about the day before,4,fear,5,surprise,0.4635908,0.17123185,0.041326195,0.009917969,0.08053021,0.23340294,0.4635908
+validation,i feel very reluctant talking about death,4,fear,3,anger,0.46349874,0.11267513,0.03210066,0.06799787,0.46349874,0.25977096,0.06395659
+validation,watched a horror movie which involved sexual attacks on women,4,fear,3,anger,0.46076444,0.063130535,0.024270056,0.042279862,0.46076444,0.2460338,0.16352126
+validation,i feel that there s sometimes a danger of companies adding too much free stuff and slitting their own throats,1,joy,3,anger,0.45884013,0.15898539,0.036820296,0.06900421,0.45884013,0.19360654,0.08274342
+validation,im putting it in my palm and blowing on it hoping it gets to the ears of the universe and its feeling a little generous the day it reaches them,1,joy,2,love,0.45666197,0.07282147,0.18643549,0.45666197,0.06692136,0.08392737,0.13323231
+validation,i am feeling valued and supported which is great,1,joy,2,love,0.45650357,0.020315338,0.41729924,0.45650357,0.015241575,0.013606412,0.0770339
+validation,i feel ashamed that i hadn t even made root mousse in about a year this was a recipe that my swedish grandfather would make for the family though i hear the most authentic version calls for turnips which are not in season right now,0,sadness,2,love,0.45576498,0.06718075,0.2796421,0.45576498,0.061104905,0.04832609,0.08798118
+validation,i asked feeling smug,1,joy,3,anger,0.45534176,0.23689432,0.03315285,0.03427816,0.45534176,0.16052724,0.07980563
+validation,i pray that they will continue to be giving confident happy god fearing and feel loved,2,love,1,joy,0.45358464,0.037681405,0.45358464,0.34730628,0.06214702,0.050368886,0.048911795
+validation,i kept my laptop close searching for jobs that i could build a career out of and looking for those all important christmas recipes to make this year feel a little more special,1,joy,2,love,0.45315653,0.038733684,0.37223983,0.45315653,0.022881541,0.028396733,0.084591575
+validation,i feel like all she wants is his parents fortune which is unfortunate,0,sadness,2,love,0.45301607,0.12943788,0.16876651,0.45301607,0.15157308,0.046910964,0.050295554
+validation,i finally feel i have accepted nashville as home,2,love,1,joy,0.4526403,0.18757194,0.4526403,0.097374134,0.04208643,0.060589954,0.15973726
+validation,i feel pained just thinking about it,0,sadness,5,surprise,0.45245358,0.1527922,0.016272819,0.009358623,0.12917587,0.23994693,0.45245358
+validation,i love the feeling of carrying him in my arms and looking at his sweet sleeping face,1,joy,2,love,0.45178226,0.08585417,0.15594877,0.45178226,0.07852389,0.060194604,0.16769631
+validation,i feel like half the time i just dont show affection and interest to anyone outside my little circle of comfort where a sincere response is guaranteed,1,joy,2,love,0.45109633,0.03754327,0.34064454,0.45109633,0.052007593,0.036614284,0.08209404
+validation,i feel like you re being super humble right now,1,joy,2,love,0.4505342,0.05201099,0.4020322,0.4505342,0.03985213,0.020737344,0.03483318
+validation,im feeling pretty shaken at the moment,4,fear,5,surprise,0.45039758,0.12685324,0.052556157,0.005375573,0.08539281,0.2794246,0.45039758
+validation,i do and love so much i realized that ive simply been cooking and posting recipes because i feel like i have to for content not because i have a story,1,joy,2,love,0.44983488,0.050198022,0.2799934,0.44983488,0.034109317,0.035134327,0.15073007
+validation,i feel disturbed by the more and more unreasonable lie my life is taking towards,0,sadness,3,anger,0.44923007,0.1944651,0.07871011,0.041463777,0.44923007,0.18991739,0.0462136
+validation,i prayed for love for the people that i was feeling bitter towards and that they would find what was best for them,3,anger,2,love,0.44859183,0.07312951,0.2082521,0.44859183,0.12748547,0.07746582,0.065075375
+validation,i feel happy and grateful to you all,1,joy,2,love,0.44849828,0.024742542,0.444722,0.44849828,0.011979428,0.010284204,0.059773482
+validation,i want to go find something to wear for pesach that is ethnic and flowy and perhaps even jingly and makes me feel playful and royal at the same time,1,joy,2,love,0.4482364,0.038417917,0.3733462,0.4482364,0.04535397,0.030264117,0.06438134
+validation,i woke up on saturday feeling so glad it was saturday and that the work week was behind me,1,joy,5,surprise,0.44737864,0.1724449,0.081817545,0.010265204,0.08056151,0.20753221,0.44737864
+validation,i knew it was the holy spirit at work plus it feels divine in the gooooood way like a massage reassuring me,1,joy,2,love,0.44488353,0.053729728,0.32102183,0.44488353,0.059417717,0.031997584,0.08894958
+validation,im freaking out worried feeling rejected,0,sadness,3,anger,0.4384716,0.2310576,0.008316771,0.002143412,0.4384716,0.2730834,0.04692731
+validation,i could feel myself hit this strange foggy wall,4,fear,5,surprise,0.43823168,0.2118549,0.013522244,0.0017767494,0.056629136,0.27798533,0.43823168
+validation,i cannot help but feel inspired and uplifted both by martinez himself and by his association with occupy wall street,1,joy,5,surprise,0.43780664,0.09690323,0.11830838,0.09099297,0.09590182,0.16008689,0.43780664
+validation,i feel like being ignored,0,sadness,3,anger,0.43722138,0.16221254,0.033252,0.009976439,0.43722138,0.27771035,0.0796273
+validation,ive been feeling distressed,4,fear,0,sadness,0.4360642,0.4360642,0.010338983,0.0018288466,0.049579147,0.28544173,0.21674712
+validation,i feel fine he adds with a bright smile,1,joy,2,love,0.4357812,0.02767612,0.41110024,0.4357812,0.021826558,0.012550734,0.09106517
+validation,i have this feeling that if i have anymore vigorous sexual activity in the coming yes i misspelt that as cumming days parts of me will begin to fall off,1,joy,3,anger,0.4353207,0.15905157,0.054642286,0.083948895,0.4353207,0.16784059,0.09919599
+validation,i left feeling slightly dazed confused and disappointed,5,surprise,4,fear,0.43483892,0.16644725,0.0028649063,0.0009741843,0.09826163,0.43483892,0.29661313
+validation,i feel that the students in this classroom are very hostile towards any display of intellect just like the rest of society,3,anger,1,joy,0.43472227,0.05078445,0.43472227,0.32233006,0.052225783,0.04470168,0.09523568
+validation,im tired of feeling troubled stressed up feeling down and falling sick,0,sadness,4,fear,0.4346786,0.20476802,0.009472089,0.009095047,0.25878227,0.4346786,0.0832039
+validation,i remember feeling excited about that particular day because i considered myself a grown up and woop,1,joy,2,love,0.43451256,0.043494932,0.36606073,0.43451256,0.032274675,0.026699655,0.09695741
+validation,i feel is doubtful but then again i could be wrong,4,fear,0,sadness,0.4339063,0.4339063,0.054390743,0.0050053285,0.143563,0.25065842,0.112476155
+validation,i feel pretty content rel bookmark i feel pretty content a href http getyourprettyon,1,joy,2,love,0.43387318,0.10213724,0.24862456,0.43387318,0.08533686,0.041784786,0.08824338
+validation,i have the feeling that she was the super agent we even found out that while she is good at shooting she is not good at shooting at a moving truck,1,joy,5,surprise,0.43301702,0.09387612,0.12772515,0.024115182,0.09316498,0.22810158,0.43301702
+validation,i read the book and feel like i am travelling those journeys sometimes i am amazed sometimes i cry sometimes i laugh sometimes i yearn for what is written sometimes i remember my friends my family and the deceased and realise there is so much to do for them,5,surprise,2,love,0.4325605,0.054547306,0.20645322,0.4325605,0.09397019,0.062295645,0.15017314
+validation,i dont say anything because i dont want to cause a fuss and i hate it when people feel sorry for me,0,sadness,3,anger,0.4320004,0.22335629,0.04246649,0.06243938,0.4320004,0.16556962,0.07416773
+validation,i feel tortured with tiredness everyday,4,fear,0,sadness,0.431787,0.431787,0.0052758167,0.005184778,0.30435133,0.20338447,0.05001657
+validation,i could genuinely connect and enjoy instead of withdrawing and feeling resentful,3,anger,2,love,0.43085784,0.04281846,0.16164501,0.43085784,0.17547952,0.122820236,0.06637891
+validation,i feel guilty not doing everything i use to i feel worried that i am a bad officer,0,sadness,3,anger,0.42967305,0.26160225,0.03620497,0.025280742,0.42967305,0.19282368,0.05441541
+validation,im feeling overwhelmed,5,surprise,4,fear,0.4295119,0.1705186,0.00740032,0.000702099,0.061584562,0.4295119,0.3302825
+validation,i am thrilled for a lot of these things i feel petrified,4,fear,1,joy,0.42790535,0.12908365,0.42790535,0.19647016,0.039733257,0.038113337,0.1686942
+validation,i feel divine forgiveness of all human frailties,1,joy,2,love,0.4277925,0.2390818,0.14087601,0.4277925,0.05943791,0.049098037,0.083713725
+validation,i feel a sweet sense of optimism touched with anxiety about the coming days,1,joy,2,love,0.42763805,0.08111852,0.16294982,0.42763805,0.13190657,0.084263444,0.11212355
+validation,i am at an aa meeting today and really started to feel so isolated from everyone in the room,0,sadness,1,joy,0.42760566,0.09049137,0.42760566,0.11175864,0.08360998,0.12410754,0.1624268
+validation,i feel so horny in these thigh high nylons,2,love,0,sadness,0.42694953,0.42694953,0.06988457,0.17172974,0.16088456,0.100230865,0.070320755
+validation,i feel excited for this episode,1,joy,5,surprise,0.4268745,0.049827356,0.40164673,0.0700627,0.014002816,0.03758595,0.4268745
+validation,i seriously feel uncomfortable,4,fear,0,sadness,0.4264479,0.4264479,0.0073659415,0.0012631178,0.24031667,0.2871187,0.037487566
+validation,ive also made it with both sugar measurements but i feel like cup is just too sweet for me,2,love,1,joy,0.42475373,0.03659663,0.42475373,0.34601676,0.01681263,0.019777244,0.156043
+validation,i feel so happy when i eat something that i know i started from seed and cared for along the way,1,joy,2,love,0.42408663,0.033255666,0.2737643,0.42408663,0.05156713,0.06010834,0.1572179
+validation,i chose to go with my gut feeling i think this only amused laetshi further if i d been the easily flustered type he d have probably said something,1,joy,5,surprise,0.42406827,0.11844408,0.12592721,0.036151007,0.11588895,0.17952049,0.42406827
+validation,i began the day feeling intimidated courthouses are designed to intimidate but ended the day cheerfully chatting with the judge in his chambers,4,fear,3,anger,0.4219339,0.14742789,0.06296503,0.053294633,0.4219339,0.18884106,0.12553751
+validation,i feel like we owe it to each other to be intelligent about our sexual decisions,1,joy,2,love,0.42177734,0.0559784,0.2825002,0.42177734,0.124774195,0.060684975,0.05428483
+validation,im feeling pretty depressed and i think its spiraling,0,sadness,4,fear,0.42164004,0.19915238,0.025739383,0.0067279357,0.15097502,0.42164004,0.19576518
+validation,i cannot stop loving you and it just feels amazing it really fills my heart so let me,1,joy,2,love,0.42151526,0.106056064,0.24665445,0.42151526,0.058987312,0.04460322,0.12218367
+validation,i don t feel very reassured when the general environment at a recruiters doesn t look like an office one either,1,joy,3,anger,0.4214038,0.11097731,0.14023732,0.05621721,0.4214038,0.19452928,0.07663506
+validation,i feel guilty that we will do nothing special on thanksgiving,0,sadness,1,joy,0.4205683,0.14748043,0.4205683,0.25851533,0.059524424,0.03879574,0.07511572
+validation,i no longer feel like a pathetic sad fat girl who cant eat nachos every day,0,sadness,2,love,0.42028207,0.18170103,0.087386325,0.42028207,0.21927255,0.045357857,0.046000246
+validation,i guess i do have to give some credit to the douche bags out there though because after all those feelings are what give birth to these lovely words i utter,2,love,0,sadness,0.4201401,0.4201401,0.0750876,0.069478564,0.16007899,0.13023444,0.14498045
+validation,i especially feel this way because someone who i thought was my friend rejected me and joined the clique,0,sadness,3,anger,0.41981578,0.14596403,0.107163526,0.20613877,0.41981578,0.07069451,0.05022345
+validation,i feel very disheartened today,0,sadness,5,surprise,0.41919306,0.1396413,0.12498853,0.0049664844,0.055634033,0.25557658,0.41919306
+validation,i also feel overwhelmed by to do lists,4,fear,5,surprise,0.41906726,0.1691454,0.045510408,0.0073445314,0.061716024,0.29721636,0.41906726
+validation,i cleaned i walked to work i feel very eco friendly right now and did manual labor with charts,1,joy,0,sadness,0.41793287,0.41793287,0.14953636,0.034190577,0.16057503,0.1807154,0.05704982
+validation,i really hope so i feel so isolated right now and on top of feeling overwhelmed confused lonely stressed and nervous it s really difficult at the moment,0,sadness,4,fear,0.417834,0.123971604,0.042355087,0.02291802,0.14390065,0.417834,0.24902062
+validation,when i learnt that i had been admitted to the university,1,joy,5,surprise,0.4175486,0.21119092,0.07580734,0.026192944,0.11023187,0.15902835,0.4175486
+validation,i walked into the dawn treader feeling fairly skeptical and walked out with three great books one was a hardcover book in japanese that i picked up for my mom for,4,fear,5,surprise,0.41695935,0.076132424,0.12630628,0.08403792,0.10572615,0.19083795,0.41695935
+validation,i normally feel kind of awkward at birthday dinner parties since theres always someone i dont know but not this time,0,sadness,2,love,0.41605824,0.087236166,0.30073726,0.41605824,0.096337944,0.042252455,0.057377845
+validation,i often play the role of a loquacious hunters always feel superior to others than he who long off than he beautiful really a flower plug in cow dung and marry him though he be like a big grievance,1,joy,3,anger,0.41504726,0.11839996,0.09128266,0.20662762,0.41504726,0.10243248,0.066210024
+validation,i feel that was one of those episodes where everything just fell into place i really liked how that one turned out,2,love,5,surprise,0.4147502,0.22964872,0.051828437,0.018869966,0.08421357,0.20068915,0.4147502
+validation,i am feeling miserable but c i am also the proudest mum on earth,0,sadness,1,joy,0.4138046,0.174927,0.4138046,0.052463025,0.045287825,0.10179099,0.21172649
+validation,i like to feel respected by a guy i m with not abused,1,joy,3,anger,0.41377032,0.17825615,0.104042284,0.11253792,0.41377032,0.12499962,0.06639372
+validation,i sure hope we do as i feel very isolated without any contact with home,0,sadness,1,joy,0.4135258,0.13643992,0.4135258,0.12770216,0.08434458,0.14001639,0.0979712
+validation,im sorry i have a really bad cold and im feeling bitchy cos i never got to go out drinking myself stupid with my best friends tonight,3,anger,0,sadness,0.4125777,0.4125777,0.05955089,0.04528968,0.27255288,0.124278866,0.08575007
+validation,i feel selfish for it,3,anger,0,sadness,0.41200387,0.41200387,0.12132437,0.06556846,0.33137816,0.04988593,0.019839333
+validation,i threw open my windows for minutes and then we were all freezing so i had to shut them and sat back and enjoyed that feeling of tranquility that only comes in those few minutes precious minutes when everything is spotlessly in order,1,joy,0,sadness,0.41177893,0.41177893,0.15530664,0.090961695,0.113432065,0.12051813,0.108002536
+validation,im feeling really lethargic and weird today,0,sadness,5,surprise,0.41169095,0.17833748,0.087859154,0.008826267,0.09162166,0.22166453,0.41169095
+validation,when i almost walked on a snake,4,fear,3,anger,0.41141048,0.07160967,0.07520161,0.2022604,0.41141048,0.122828454,0.11668941
+validation,i would give you ample reasons to feel ashamed,0,sadness,1,joy,0.4108121,0.21707399,0.4108121,0.1938676,0.06783669,0.06574726,0.04466238
+validation,i don t know if i would enjoy those books now but i still remember feeling enthralled with those characters and with the amish lifestyle presented,5,surprise,2,love,0.41044423,0.09851131,0.16805574,0.41044423,0.17608957,0.07116233,0.07573694
+validation,i feel for pete but i also admire the fact that he is not devastated by it and is still his positive happy self,0,sadness,1,joy,0.4102496,0.13667138,0.4102496,0.13111201,0.059062954,0.06593973,0.19696437
+validation,i am sharing information that i feel is important to personal safety and empowerment parenting and living well,1,joy,2,love,0.4093232,0.06798282,0.33160105,0.4093232,0.05043761,0.056428757,0.08422661
+validation,i listen although i don t feel very brave about it feeling skeptical about its possibilities here,1,joy,5,surprise,0.40896043,0.03835251,0.23898448,0.09833278,0.07771011,0.13765971,0.40896043
+validation,i really started to feel that the ica was an association worth supporting and maybe something that id enjoy being a part of,2,love,1,joy,0.40790936,0.15815608,0.40790936,0.17057252,0.059021927,0.07792757,0.12641253
+validation,im a firm believer that nothing makes a woman feel much more terrific than a great trip to the salon to lift her spirits a bit,1,joy,2,love,0.4075922,0.04243174,0.3651634,0.4075922,0.043644495,0.03638533,0.10478289
+validation,i feel blessed to have had years with him and i am thankful for all i learned from him,1,joy,2,love,0.4075292,0.09663894,0.25604162,0.4075292,0.07821268,0.044306643,0.117270865
+validation,i am used to being let down and feeling rejected by guys,0,sadness,3,anger,0.40752065,0.13797872,0.07283498,0.029031705,0.40752065,0.2776866,0.07494737
+validation,i get the feeling this miserable narrator is pining for an ex lover dreaming of her return and wonders whether he should unlock his door in case she should come this way and in and have a drink and dancing,0,sadness,2,love,0.40714592,0.098596804,0.18276523,0.40714592,0.086998306,0.086500056,0.13799368
+validation,i feel that he has lost the game,0,sadness,5,surprise,0.40684533,0.21339996,0.20825006,0.024694838,0.044859845,0.10194996,0.40684533
+validation,i really do feel as if i can finally create something lovely in my new room,2,love,1,joy,0.40683398,0.078335114,0.40683398,0.35278592,0.021730907,0.03149364,0.10882061

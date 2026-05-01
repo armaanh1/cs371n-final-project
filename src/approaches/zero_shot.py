@@ -55,7 +55,12 @@ def run_zero_shot(
 
         for offset, output in enumerate(outputs):
             row = start + offset
-            for label, score in zip(output["labels"], output["scores"]):
+            scores = np.asarray(output["scores"], dtype=np.float32)
+            score_sum = float(scores.sum())
+            if score_sum > 0.0:
+                scores = scores / score_sum
+
+            for label, score in zip(output["labels"], scores):
                 probabilities[row, label_to_id[label]] = float(score)
             predictions[row] = int(probabilities[row].argmax())
 

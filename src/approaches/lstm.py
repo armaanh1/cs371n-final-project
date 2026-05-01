@@ -7,6 +7,7 @@ import torch
 from torch import nn
 from torch.nn.utils.rnn import pack_padded_sequence
 from torch.utils.data import DataLoader, Dataset
+from sklearn.utils.class_weight import compute_class_weight
 from tqdm.auto import tqdm
 
 from data import DatasetBundle
@@ -87,6 +88,11 @@ def run_lstm(
     device = choose_device(device_name)
 
     vocab = build_vocab(bundle.train_texts, max_vocab=max_vocab, min_freq=1)
+    class_weights = compute_class_weight(
+        class_weight="balanced",
+        classes=np.unique(bundle.train_labels),
+        y=bundle.train_labels,
+    )
     save_json(vocab, output_dir / "vocab.json")
     save_json(
         {
@@ -96,6 +102,8 @@ def run_lstm(
             "embedding_dim": embedding_dim,
             "hidden_dim": hidden_dim,
             "num_layers": num_layers,
+            "class_weights": class_weights,
+            "early_stopping_metric": "validation_macro_f1",
         },
         output_dir / "model_config.json",
     )
@@ -126,7 +134,7 @@ def run_lstm(
         num_layers=num_layers,
     ).to(device)
     optimizer = torch.optim.AdamW(model.parameters(), lr=lr)
-    criterion = nn.CrossEntropyLoss()
+    criterion = nn.CrossEntropyLoss(weight=torch.tensor(class_weights, dtype=torch.float32, device=device))
 
     best_macro_f1 = -1.0
     best_state = None
