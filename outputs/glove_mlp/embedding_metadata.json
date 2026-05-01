@@ -1,0 +1,26 @@
+{
+  "embedding_name": "antokun/glove.6B.50d",
+  "glove_path": null,
+  "vector_size": 50,
+  "max_tokens": 128,
+  "coverage": {
+    "train": {
+      "token_coverage": 0.9957865575957996,
+      "texts_with_any_embedding": 1.0,
+      "total_tokens": 275784.0,
+      "found_tokens": 274622.0
+    },
+    "validation": {
+      "token_coverage": 0.9954982673187162,
+      "texts_with_any_embedding": 1.0,
+      "total_tokens": 30877.0,
+      "found_tokens": 30738.0
+    },
+    "test": {
+      "token_coverage": 0.9957189098882739,
+      "texts_with_any_embedding": 1.0,
+      "total_tokens": 38308.0,
+      "found_tokens": 38144.0
+    }
+  }
+}

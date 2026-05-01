@@ -1,0 +1,12 @@
+{
+  "model_name_or_path": "typeform/distilbert-base-uncased-mnli",
+  "candidate_labels": [
+    "sadness",
+    "joy",
+    "love",
+    "anger",
+    "fear",
+    "surprise"
+  ],
+  "hypothesis_template": "This text expresses {}."
+}

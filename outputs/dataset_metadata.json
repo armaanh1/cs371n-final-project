@@ -1,0 +1,25 @@
+{
+  "dataset_name": "dair-ai/emotion",
+  "text_column": "text",
+  "label_column": "label",
+  "label_names": [
+    "sadness",
+    "joy",
+    "love",
+    "anger",
+    "fear",
+    "surprise"
+  ],
+  "split_protocol": "validation is a stratified holdout from the original train split; test is held out for final evaluation",
+  "validation_fraction": 0.1,
+  "original_splits": {
+    "train": 16000,
+    "validation": 2000,
+    "test": 2000
+  },
+  "splits": {
+    "train": 14400,
+    "validation": 1600,
+    "test": 2000
+  }
+}

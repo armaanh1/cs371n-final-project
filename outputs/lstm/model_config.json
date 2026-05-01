@@ -1,0 +1,8 @@
+{
+  "max_vocab": 20000,
+  "actual_vocab_size": 14378,
+  "max_length": 80,
+  "embedding_dim": 128,
+  "hidden_dim": 128,
+  "num_layers": 1
+}

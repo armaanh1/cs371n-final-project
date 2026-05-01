@@ -1,0 +1,54 @@
+{
+  "model": "distilbert",
+  "split": "test",
+  "num_examples": 2000,
+  "accuracy": 0.9235,
+  "macro_f1": 0.8742550429742031,
+  "weighted_f1": 0.9230911059778613,
+  "label_names": [
+    "sadness",
+    "joy",
+    "love",
+    "anger",
+    "fear",
+    "surprise"
+  ],
+  "per_class": {
+    "sadness": {
+      "precision": 0.9606164383561644,
+      "recall": 0.9655765920826161,
+      "f1": 0.9630901287553648,
+      "support": 581
+    },
+    "joy": {
+      "precision": 0.9375,
+      "recall": 0.9496402877697842,
+      "f1": 0.9435310936383131,
+      "support": 695
+    },
+    "love": {
+      "precision": 0.8238993710691824,
+      "recall": 0.8238993710691824,
+      "f1": 0.8238993710691824,
+      "support": 159
+    },
+    "anger": {
+      "precision": 0.9325842696629213,
+      "recall": 0.9054545454545454,
+      "f1": 0.9188191881918819,
+      "support": 275
+    },
+    "fear": {
+      "precision": 0.8938053097345132,
+      "recall": 0.9017857142857143,
+      "f1": 0.8977777777777778,
+      "support": 224
+    },
+    "surprise": {
+      "precision": 0.7333333333333333,
+      "recall": 0.6666666666666666,
+      "f1": 0.6984126984126984,
+      "support": 66
+    }
+  }
+}
